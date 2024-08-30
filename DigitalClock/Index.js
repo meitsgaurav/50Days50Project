@@ -2,12 +2,15 @@ let hour=document.getElementById('hours');
 let minutes=document.getElementById('minutes');
 let seconds=document.getElementById('seconds');
 let am=document.getElementById('ampm');
+let ms=document.getElementById('miliseconds');
 
 
 function updateClock(){
     let getHour=new Date().getHours();
     let getMinute=new Date().getMinutes();
     let getSecond=new Date().getSeconds();
+    let getMillisecond=new Date().getMilliseconds();
+
 
     let ampm='AM'
 
@@ -20,10 +23,11 @@ function updateClock(){
     minutes.innerText=getMinute
     seconds.innerText=getSecond
     am.innerText=ampm
+    ms.innerText=getMillisecond
 
     setTimeout(()=>{
         updateClock()
-    },1000)
+    },100)
 }
 
 updateClock()
