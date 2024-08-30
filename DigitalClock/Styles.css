@@ -45,10 +45,6 @@ h2{
     letter-spacing: 2px;
 }
 
-.clock #ampm{  
-    position: absolute;
-}
-
 .button {
     background-color: #4CAF50; 
     border: none;

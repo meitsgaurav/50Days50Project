@@ -2,7 +2,7 @@ let hour=document.getElementById('hours');
 let minutes=document.getElementById('minutes');
 let seconds=document.getElementById('seconds');
 let am=document.getElementById('ampm');
-let ms=document.getElementById('miliseconds');
+let ms=document.getElementById('milliseconds');
 
 
 function updateClock(){
